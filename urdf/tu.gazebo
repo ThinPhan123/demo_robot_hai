@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<robot name="demo_rover" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+<robot name="tu" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
 <xacro:property name="body_color" value="Gazebo/Silver" />
 
@@ -14,28 +14,14 @@
   <gravity>true</gravity>
 </gazebo>
 
-<gazebo reference="right_wheel_front_1">
+<gazebo reference="right_1">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 
-<gazebo reference="right_wheel_behind_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <selfCollide>true</selfCollide>
-</gazebo>
-
-<gazebo reference="left_wheel_behind_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <selfCollide>true</selfCollide>
-</gazebo>
-
-<gazebo reference="left_wheel_front_1">
+<gazebo reference="left_1">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
